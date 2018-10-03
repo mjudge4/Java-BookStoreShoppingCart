@@ -1,3 +1,4 @@
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -94,7 +95,7 @@
       <artifactId>tomcat7-maven-plugin</artifactId>
       <version>2.2</version>
       <configuration>
-        <port>8080</port>
+        <port>8000</port>
         <path>/</path>
         <contextReloadable>true</contextReloadable>
       </configuration>
@@ -121,7 +122,7 @@
               <configuration>
                 <systemPropertyVariables>
                   <!-- Remember to deploy the app and start the server in advance -->
-                  <integration.base.url>http://localhost:8080</integration.base.url>
+                  <integration.base.url>http://localhost:8000</integration.base.url>
                 </systemPropertyVariables>
               </configuration>
             </execution>
