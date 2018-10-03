@@ -52,5 +52,13 @@ public class ShoppingCart {
   }
   setOrderTotal(dblTotal);
  }
+ 
+ public void deleteCartItem(int index) {
+	 try {
+		 cartItems.remove(index);
+	 }catch(IndexOutOfBoundsException io){
+		 throw new IndexOutOfBoundsException();	 
+	 }
+ }
 
 }
